@@ -103,6 +103,12 @@ main {
   border-bottom: 1px solid #d7d7d6;
 }
 
+@media print, screen and (min-width: 768px) {
+  .l-wrapper .g-header {
+    /* SP用はfixed解除も検討 */
+  }
+}
+
 .l-wrapper .header-content {
   display: block;
   -webkit-box-sizing: border-box;
@@ -123,6 +129,7 @@ main {
   text-align: center;
   font-size: 13px;
   font-size: 1.3em;
+  /* Default txt shadow*/
 }
 
 @media print, screen and (min-width: 768px) {
@@ -437,7 +444,7 @@ main {
   /*============================
     .g-footer-nav
     ============================*/
-  /* Buttons */
+  /* SNS buttons */
   /* Heart Beat Button */
 }
 
@@ -804,34 +811,9 @@ main {
   }
 }
 
-@-webkit-keyframes top_view {
-  0% {
-    opacity: 1;
-    visibility: visible;
-  }
-  80% {
-    opacity: 1;
-    visibility: visible;
-  }
-  100% {
-  }
-}
-
-@keyframes top_view {
-  0% {
-    opacity: 1;
-    visibility: visible;
-  }
-  80% {
-    opacity: 1;
-    visibility: visible;
-  }
-  100% {
-  }
-}
-
+/* top view用 */
 body {
-  background-image: url(https://yutaponta.github.io/corporate-site//img/stiff-paper.png);
+  background-image: url(../img/stiff-paper.png);
   background-color: rgba(255, 255, 255, 0.25);
   background-blend-mode: lighten;
   background-size: cover;
@@ -841,21 +823,14 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url(https://yutaponta.github.io/corporate-site//img/cover-book.png);
+  background-image: url(../img/cover-book.png);
   background-size: cover;
-  -webkit-animation: top_view 15s;
-          animation: top_view 15s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
   z-index: 60;
   font-family: 'Kaushan Script', 'Permanent Marker', 'Bangers', cursive, YuGothic, 游ゴシック, 'Yu Gothic', 'Noto Sans Japanese', sans-serif;
   font-weight: bold;
   text-transform: capitalize;
+  /* click behavior */
 }
-
-/* .top_view.target.is-hidden {
-  display: none;
-} */
 
 .top_view::after {
   content: '';
@@ -1533,66 +1508,6 @@ body {
   }
 }
 
-.main .profile .other_list .type-10 {
-  display: none;
-  padding: 0 !important;
-  margin-left: -10px;
-}
-
-.main .profile .other_list .type-10 > span > span {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  -webkit-transform-origin: 100% 100%;
-          transform-origin: 100% 100%;
-}
-
-.main .profile .other_list .type-10 > span > span span {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: block;
-  opacity: 1;
-  left: 0;
-  top: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-align: center;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  color: #000;
-  -webkit-transition: background 0.3s linear, -webkit-transform 0.3s linear;
-  transition: background 0.3s linear, -webkit-transform 0.3s linear;
-  transition: transform 0.3s linear, background 0.3s linear;
-  transition: transform 0.3s linear, background 0.3s linear, -webkit-transform 0.3s linear;
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
-}
-
-.main .profile .other_list .type-10:hover > span > span span:first-of-type {
-  background: #1a5470;
-}
-
-.main .profile .other_list .type-10 > span > span span:nth-of-type(2) {
-  -webkit-transform: rotateY(90deg) translateX(-120px);
-          transform: rotateY(90deg) translateX(-120px);
-  background: #aaa;
-}
-
-.main .profile .other_list .type-10:hover > span > span span:nth-of-type(2) {
-  background: #fff7f5;
-  color: #000;
-}
-
-.main .profile .other_list .type-10:hover > span > span {
-  -webkit-transform: rotateY(-90deg);
-          transform: rotateY(-90deg);
-}
-
 .main .phrase_close {
   text-align: center;
   font-size: 12px;
@@ -2268,7 +2183,7 @@ body {
   background-position: 1% 50%;
   background-size: 300% 300%;
   border: none;
-  border: 2px solid lightgray;
+  border: 2px solid #d3d3d3;
 }
 
 .main #contact .contact-content .contact_inner #contact-form #submit2:hover {

@@ -2114,6 +2114,7 @@ body {
 .main #contact .contact-content .contact_inner #contact-form {
   position: relative;
   display: none;
+  background-color: cl(white);
   width: 400px;
   margin: 0 auto;
   -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);

@@ -102,7 +102,7 @@
   padding: 1px;
 }
 #cboxLoadingGraphic {
-  background: url(../img/loading.gif) no-repeat center center;
+  background: url(https://yutaponta.github.io/corporate-site/img/loading.gif) no-repeat center center;
 }
 #cboxLoadingOverlay {
   background: #000;
@@ -134,7 +134,7 @@
   height: 20px;
   position: absolute;
   top: -20px;
-  background: url(../img/controls.png) no-repeat 0 0;
+  background: url(https://yutaponta.github.io/corporate-site/img/controls.png) no-repeat 0 0;
 }
 
 /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */

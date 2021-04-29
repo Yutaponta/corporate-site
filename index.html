@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+
+  <title>WEBデザイン｜WEBデザイナー：Yutaka Nishizaki</title>
+  <meta name="author" content="nishizakiyutaka">
+  <meta name="keyword" content="ウェブデザイン,ウェブデザイナー,制作会社,コーダー,wordpress,design,jquery,nishizakiyutaka,html,css,coding,福岡,長崎">
+  <meta name=”description” content=”ワクワクするウェブデザイン、サイト制作承ります。ホームページ、オンラインショップ、ECサイトを作りたい、リニューアルしたい、投稿、更新したいなど、なんでもご相談ください。HTML5、CSS、jQuery、Bootstrapによるコーディング、WordPressのカスタマイズに対応しております。” />
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="WEBデザイン｜WEBデザイナー：Yutaka Nishizaki">
+  <meta property="og:title" content="WEBデザイン｜WEBデザイナー：Yutaka Nishizaki">
+  <meta property="og:type" content="website">
+  <!-- サイトURL入力 -->
+  <meta property="og:url" content="https://">
+  <meta property="og:description" content="ワクワクするウェブデザイン、サイト制作承ります。ホームページ、オンラインショップ、ECサイトを作りたい、リニューアルしたい、投稿、更新したいなど、なんでもご相談ください。HTML5、CSS、jQuery、Bootstrapによるコーディング、WordPressのカスタマイズに対応しております。">
+  <!-- Twitter画像 -->
+  <meta name="og:image" content="/img/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:name" content="@yutakanishizaki">
+
+  <link rel="stylesheet" href="/css/reset.css"/>
+  <link rel="stylesheet" href="/scss/style.css"/>
+  <link rel="stylesheet" href="/css/colorbox.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Bree+Serif&family=Caveat&family=Courgette&family=Damion&family=Mrs+Saint+Delafield&family=Sacramento&family=Tangerine&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Kaushan+Script&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet" />
+  <!-- サイトURLの//以降 -->
+  <link rel='dns-prefetch' href='//' />
+</head>
+
+<body>
+  <!-- Home-intro アクセス時に表示される-->
+  <div class="top_view target">
+    <h2 class="text-focus-in">let your website&nbsp;<span class="text-focus-in2">&nbsp;make things happen</span></h2>
+    <p class="text-focus-in3"><span class="with">with</span>&nbsp;yutaka nishizaki</p>
+    <button type="button" class="btn button click wow animate__animated animate__fadeIn animate__delay-10s">click me</button>
+  </div>
+  <!-- <div class="Home-intro js-home-intro">
+  <div class="Home-intro_main js-intro-main"></div>
+  <p class="Home-intro_scroll-down js-home-intro-scrolldown"><a href="#wrapper"><img src="/" width="" height="" alt="Scroll Down"></a></p>
+  </div> -->
+
+  <div id="wrapper" class="l-wrapper js-wrapper">
+
+    <!-- g-header -->
+    <header id="header" class="g-header js-header">
+
+      <div class="header-content">
+        <h1 class="g-mb-logo"><a href="/">website design｜webデザイン</a></h1>
+        <!-- <nav class="g-language-select">
+          <ul>
+            <li class="g-language _en"><a href="/en/" class="g-language-link">EN</a></li>
+            <li class="g-language _jp is-selected"><a href="/" class="g-language-link">JP</a></li>
+          </ul>
+        </nav> -->
+      </div>
+      <button type="button" class="nav-btn js-hamburger" aria-label="メニュー" aria-controls="nav" aria-expanded="false"><span></span><span></span><span></span></button>
+    </header>
+
+    <!-- g-nav -->
+    <nav class="g-nav js-nav">
+      <div class="g-nav_body"><!-- g-nav-body -->
+        <ul class="g-nav_options">
+          <li class="g-nav_item _about-me">
+            <a href="#introduction" class="g-nav_link js-g-nav_link">
+            <span class="item_main">introduction</span><br>
+            <span class="item_sub">ご挨拶</span>
+            </a>
+          </li>
+          <li class="g-nav_item _portfolio">
+            <a href="#works" class="g-nav_link js-g-nav_link">
+            <span class="item_main">works</span><br>
+            <span class="item_sub">制作実績</span>
+            </a>
+          </li>
+          <li class="g-nav_item _skill-map">
+            <a href="#skill-set" class="g-nav_link js-g-nav_link">
+            <span class="item_main">skill</span><br>
+            <span class="item_sub">スキル</span>
+            </a>
+          </li>
+          <li class="g-nav_item _price">
+            <a href="#service_price" class="g-nav_link js-g-nav_link">
+            <span class="item_main">service / price</span><br>
+            <span class="item_sub">サービス / 料金</span>
+            </a>
+          </li>
+          <li class="g-nav_item _contact">
+            <a href="#contact" class="g-nav_link js-g-nav_link">
+            <span class="item_main">contact</span><br>
+            <span class="item_sub">お問い合わせ</span>
+            </a>
+          </li>
+        </ul>
+      </div><!-- g-nav-body -->
+    </nav>
+  <!-- 矢印用 -->
+    <!-- <div class="g-nav-toggle js-g-nav-toggle">
+      <span class="g-nav-toggle_line _1"></span>
+      <span class="g-nav-toggle_line _2"></span>
+    </div> -->
+
+    <main>
+      <div class="main">
+        <div class="www-content">
+          <nav class="g-header-nav">
+            <ul class="header-nav_list">
+              <li class="g-header-nav_item">
+                <a class="wakuwaku">w</a>
+              </li>
+              <li class="g-header-nav_item">
+                <a class="website">w</a>
+              </li>
+              <li class="g-header-nav_item">
+                <a class="warau">w</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <section class="home-content" id="introduction">
+          <h2 class="cmn-title _intro wow animate__animated animate__fadeIn animate__delay-1s">
+            <span class="en">introduction</span>
+            <span class="jp">ご挨拶</span>
+          </h2>
+          <div class="inner wow animate__animated animate__fadeIn animate__delay-1s">
+            <div class="phrase_start wow animate__animated animate__pulse animate__delay-2s" data-wow-offset="100">
+              <div class="phrase_start_www _eng">
+                <ul class="phrase_eng">
+                  <li class="phrase_item_eng _wakuwaku" id="three-d"><span class="initial">W</span>aku<span class="initial">W</span>aku</li>
+                  <li class="phrase_item_eng _web" id="td"><span class="initial">W</span>ebsite</li>
+                  <li class="phrase_item_eng _warai" id="td"><span class="initial">W</span>araigao</li>
+                </ul>
+              </div>
+              <div class="phrase_start_www _jp">
+                <ul class="phrase_jp">
+                  <li class="phrase_item_jp _wakuwaku" id="td"><span class="initial">ワ</span>ク<span class="initial">ワ</span>クする</li>
+                  <li class="phrase_item_jp _web" id="td"><span class="initial">ウ</span>ェブサイトで</li>
+                  <li class="phrase_item_jp _warai" id="td"><span class="initial">笑</span>い顔を作りたい</li>
+                </ul>
+              </div>
+            </div>
+            <div class="profile">
+              <div class="profile_character wow animate__animated animate__fadeInUp animate__delay-1s" data-wow-offset="100">
+                <!-- <div class="profile_txt"> -->
+                <div class="profile_intro">
+                  <h3 class="cmn_sub _intro">
+                    <span class="en">intro</span>
+                    <span class="jp">はじめに</span>
+                  </h3>
+                  <div class="inner-profile">
+                    <div class="profile-txt">
+                      <p class="cmn-des">長崎生まれ、長崎育ちのWebデザイナー、ゆたぽんこと<span class="name">西崎 豊</span>と申します。</p>
+                      <p class="cmn-des">地元諫早のとある農業高校を卒業後、宮崎→福岡→30歳＆英語力ゼロでNZ→AU→バヌアツ共和国の海外生活を経て、現在は第2の故郷&thinsp;“福岡”へ。</p>
+                      <p class="cmn-des">「HTMLの教科書」片手に完全独学で某化粧品/健康食品会社のWebサイトを制作したのが十数年前。（今となってはお蔵入り...）<br>
+                      通販会社、バヌアツの旅行会社では主にパンフレット、名刺などのDTP（紙媒体の印刷物）を担当。</p>
+                      <p class="cmn-des">処女作から10年以上の時をかけ、3つのプログラミングスクールを経てWebの世界へカムバック。</p>
+                    </div>
+                    <div class="profile_img">
+                      <img src="/img/profile/IMGP1519.jpeg" alt="WEBデザイナー、西崎豊のプロフィール写真" class="profile-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- </div> -->
+              <div class="profile_pholosophy wow animate__animated animate__fadeInUp" data-wow-offset="100">
+                <h3 class="cmn_sub _philosophy">
+                  <span class="en">philosophy</span>
+                  <span class="jp">大切にしていること</span>
+                </h3>
+                <p class="cmn-des">
+                  丁寧かつ率直なコミュニケーションをはかり、目的や課題をしっかり汲み取ること。<br>
+                  その上で一方的な押しつけやアピールではなく、見る人、手に取る人の”想い”を想像すること。<br>
+                  二人三脚で作り上げていく過程を大切にしていきたい。<br>
+                  ソフトウェア、アプリケーションの品質管理も行っており、使い勝手や利便性など、よりユーザー視点でのUX/UIに特化したWebデザイン提案をおこないます。
+                </p>
+              </div>
+
+              <div class="profile_other wow animate__animated animate__fadeInUp" data-wow-offset="100">
+                <h3 class="cmn_sub _other">
+                  <span class="en">others</span>
+                  <span class="jp">趣味&thinsp;/&thinsp;特技&thinsp;/&thinsp;実績</span><span class="asterisk">*</span>
+                </h3>
+                <dl class="other_list">
+                  <dt class="type-10">
+                    <span>
+                      <span>
+                        <span>走り高跳び</span>
+                        <span>High Jump</span>
+                      </span>
+                    </span>
+                  </dt>
+
+                  <dt>走り高跳び</dt>
+                  <dd>2m13cmまでなら身体ひとつで跳び超えられます（高校時代）</dd>
+                  <dt>英語</dt>
+                  <dd>TOEIC 935点（英語のWebサイト制作承ります）</dd>
+                  <dt>ガイド</dt>
+                  <dd>バヌアツ共和国ならお任せください&#x203c;（翻訳、通訳、場合によっては手配まで承ります）</dd>
+                  <dt>音楽</dt>
+                  <dd>バヌアツ共和国最大の野外フェスに３年連続出演♪（Youtube参照、オリジナル楽曲有り〼）</dd>
+                  <dt>スピーチ</dt>
+                  <dd>カナエール福岡2014でボランティア代表として支援者300人を前に思いの丈をスピーチ</dd>
+                  <dt>スキルアップ</dt>
+                  <dd>Webデザイナー、一人の人間として精進あるのみ&#x203c;</dd>
+                </dl>
+              </div>
+            </div>
+            <div class="phrase_close wow animate__animated animate__fadeInUp animate__delay-0.4s" data-wow-offset="100">
+              <p class="phrase_desc"><span class="you">"you"</span>でもなく、<span class="i">"I"</span>でもなく、<span class="we">"we"</span>私たちで一緒に、</p>
+              <h3 class="close-title"><span>ワクワク</span>する<span>Webサイト</span>と<span>笑い</span>(笑顔)を作りましょう<span id="smile">&#x203c;</span></h3>
+            </div>
+          </div>
+        </section>
+
+        <section class="home-content wow animate__animated animate__fadeInUp" data-wow-offset="100" id="works">
+          <h2 class="cmn-title _workd">
+            <span class="en">works</span>
+            <span class="jp">制作実績</span>
+          </h2>
+          <ul class="works-list">
+            <li class="works-item">
+              <div class="item-txt">corporate site</div>
+              <a href="/img/portfolio/corporate_site.png" class="single" title="Corporate Site"><figure class="item-img hover-parent"><img src="/img/portfolio/corporate_site.png" alt="コーポレートサイトのイメージ写真">
+              <figcaption class="works-desc hover-mask">シンプルな中にちょっとした遊び心を。<br>制作物、コンテンツなど随時更新予定。
+              </figcaption></figure></a>
+            </li>
+            <li class="works-item">
+              <div class="item-txt">hotel website</div>
+              <a href="https://yutapon.work" class="iframe"><figure class="item-img hover-parent"><img src="/img/portfolio/gokurakutei2.png" alt="高級温泉旅館サイトのイメージ写真">
+                <figcaption class="works-desc hover-mask">高級館溢れる、架空の温泉旅館サイト。<br>WordPressによる問い合わせフォーム、<br>ブログ機能を実装。</figcaption></figure></a>
+            </li>
+            <li class="works-item">
+                <div class="item-txt">tour brochure</div>
+                <a href="/img/portfolio/kava_a4.jpeg" class="single" title="Wet n Wild：Tour Brochure"><figure class="item-img hover-parent"><img src="/img/portfolio/kava_a4.jpeg" alt="バヌアツ共和国のツアーパンフレットイメージ写真">
+                <figcaption class="works-desc hover-mask">バヌアツ観光局ベストデザインに選出。<br>イラストレーター作成の英語パンフレット。</figcaption></figure></a>
+            </li>
+            <li class="works-item">
+              <div class="item-txt">tour brochure</div>
+              <a href="/img/portfolio/wnw_a4.jpeg" class="single" title="Kava Tour Brochure"><figure class="item-img hover-parent"><img src="/img/portfolio/wnw_a4.jpeg" alt="バヌアツ共和国のツアーパンフレットイメージ写真">
+              <figcaption class="works-desc hover-mask">子供から大人まで色んな遊びが楽しめる。<br>バヌアツ共和国の遊園地をテーマに作成。</figcaption></figure></a>
+            </li>
+          </ul>
+          <div class="inner">
+            <div class="work1"></div>
+            <div class="work2"></div>
+          </div>
+        </section>
+
+        <section class="home-content wow animate__animated animate__fadeInUp" data-wow-offset="100" id="skill-set">
+          <h2 class="cmn-title _skill">
+            <span class="en">skill</span>
+            <span class="jp">スキル</span>
+          </h2>
+          <div class="inner">
+            <div class="skill-set">
+              <div class="skill-content">
+                <ul class="skill-list name">
+                  <li class="HTML">HTML5</li>
+                  <li class="CSS">CSS</li>
+                  <li class="JavaScript">JavaScript<span class="sub">&thinsp;(jQuery)</span></li>
+                  <li class="Java">Java</li>
+                </ul>
+              </div>
+              <div class="skill-content">
+                <ul class="skill-list star">
+                  <li class="star">★★★★★</li>
+                  <li class="star">★★★★</li>
+                  <li class="star">★★★★</li>
+                  <li class="star">★★★</li>
+                </ul>
+              </div>
+            </div>
+            <div class="skill-set">
+              <div class="skill-content">
+                <ul class="skill-list name">
+                  <li class="wordpress">WordPress<span class="sub">&thinsp;(CMS)</span></li>
+                  <li class="illustrator">Illustrator</li>
+                  <li class="photoshop">Photoshop</li>
+                  <li class="passion">Passion</li>
+                </ul>
+              </div>
+              <div class="skill-content">
+                <ul class="skill-list star">
+                  <li class="star">★★★★</li>
+                  <li class="star">★★★★</li>
+                  <li class="star">★★★</li>
+                  <li class="star passion">★★★★★</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="home-content wow animate__animated animate__fadeInUp" data-wow-offset="100" id="service_price">
+          <h2 class="cmn-title _service">
+            <span class="en">service</span>
+            <span class="jp">サービス</span>
+          </h2>
+          <div class="service-desc">
+            <p>デザインから、HTML、CSS、JavaScript、WordPress、コーディング代行まで。<br>
+            ウェブサイト制作全般に対応いたします。</p>
+          </div>
+          <div class="serviceーcontent">
+            <div class="service-item">
+              <h3 class="service-title">
+                <span class="title-main">WordPress</span>
+                <span class="title-sub">設計・移行</span>
+              </h3>
+              <div class="service-img">
+                <img src="/img/WordPress-logotype-wmark.png" alt="WordPress/ワードプレスイメージ画像">
+              </div>
+              <div class="service-txt">
+                <p>ブログ、新着記事など<br>更新が必要なサイト</p>
+                <ul class="wordpress-price-list">
+                  <li class="wordpress-price">移行：￥&ensp;50,000〜</li>
+                  <li class="wordpress-price">設計：￥150,000〜</li>
+                </ul>
+              </div>
+            </div>
+            <div class="service-item">
+              <h3 class="service-title">
+                <span class="title-main">LP制作</span>
+                <span class="title-sub">ランディングページ</span>
+              </h3>
+              <div class="service-img">
+                <img class="lpage" src="/img/f_f_business_56_s512_f_business_56_2nbg.png" alt="LP/ランディングページイメージ画像">
+              </div>
+              <div class="service-txt">
+                <p>商品販売やキャンペーンなど<br>1ページ完結型サイト</p>
+                <p class="price">￥70,000〜</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <h3 class="service-title">
+                <span class="title-main">Corporate Website</span>
+                <span class="title-sub">コーポレートサイト</span>
+              </h3>
+              <div class="service-img">
+                <img class="cpage" src="/img/documents (2).png" alt="Corporate Website/コーポレートサイトイメージ画像">
+              </div>
+              <div class="service-txt">
+                <p>会社ページやブランドサイトなど複数ページ型のサイト</p>
+                <p class="price">￥100,000〜</p>
+              </div>
+            </div>
+          </div>
+          <div class="criterion">※上記はおおよその目安料金となっておりますので、詳細につきましてはご相談ください</div>
+        </section>
+
+        <section class="home-content wow animate__animated animate__fadeInUp" data-wow-offset="100" id="contact">
+          <h2 class="cmn-title _contanct">
+            <span class="en">contact</span>
+            <span class="jp">お問い合わせ</span>
+          </h2>
+          <div class="inner">
+            <div class="contact-content">
+              <p>ご質問、ご依頼、ご相談から本サイトのフィードバックまで、<br>なんでもお気軽にお問い合わせください。</p>
+              <div class="contact_inner">
+
+                <!-- <input type="button" class="btn" value="お問い合わせ" id="c-btn" onclick="changeDisplay();" /> -->
+                <button type="button" class="btn wow animate__animated animate__fadeIn animate__delay-1s" data-wow-offset="100" id="c-btn">お問い合わせ</button>
+                <div id="contact-form">
+                  <form method="POST" action="#">
+                    <ul>
+                      <h3>問い合わせフォーム</h3>
+                      <li class="col">
+                        <input type="text" name="name" class="effect" id="name" placeholder="&#xf2c0; お名前" style="font-family: FontAwesome;">
+                        <span class="focus-border"></span>
+                      </li>
+                      <li class="col">
+                          <input type="email" name="email" class="effect" id="email" placeholder="&#xf003; メールアドレス" style="font-family: FontAwesome;">
+                          <span class="focus-border"></span>
+                      </li>
+                      <li class="col">
+                        <textarea name="message" class="effect" id="message" placeholder="&#xf040; お問い合わせ内容" style="font-family: FontAwesome;"></textarea>
+                        <span class="focus-border"></span>
+                      </li>
+                      <li>
+                        <!-- <input type="submit" value="送&emsp;信" id="submit" name="submit-btn"> -->
+                        <button type="submit" id="submit2" name="submit-btn" value="send">送&emsp;信</button>
+                      </li>
+                    </ul>
+                  </form>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </main>
+
+  </div><!-- /.l-wrapper -->
+
+  <footer id="footer" class="g-footer">
+    <div class="footer-content">
+      <!-- Topに戻る -->
+      <div class="g-goto-top">
+        <a href="#wrapper" class="js-scroll">
+          <svg class="g-goto-top_svg" xmlns="h" width="68" height="68" viewBox="0 0 68 68">
+            <circle class="cls-circle" cx="34" cy="34" r="34"/>
+            <path class="cls-text" d="M793.889,4087.81h-6.747v0.97h2.834v8.13h1.079v-8.13h2.834v-0.97Zm2.483,6.48a4.156,4.156,0,0,0,.682,1.49,3.085,3.085,0,0,0,1.157.95,3.664,3.664,0,0,0,1.645.34,3.3,3.3,0,0,0,2.762-1.22,5.478,5.478,0,0,0,.969-3.49,7.837,7.837,0,0,0-.221-1.93,4.206,4.206,0,0,0-.683-1.48,3.073,3.073,0,0,0-1.163-.95,3.736,3.736,0,0,0-1.664-.34,3.29,3.29,0,0,0-2.743,1.21,5.522,5.522,0,0,0-.962,3.49A7.732,7.732,0,0,0,796.372,4094.29Zm1.605-4.75a2.219,2.219,0,0,1,1.879-.92,2.1,2.1,0,0,1,1.163.31,2.467,2.467,0,0,1,.806.81,3.954,3.954,0,0,1,.468,1.2,6.643,6.643,0,0,1,.15,1.42,4.7,4.7,0,0,1-.689,2.83,2.25,2.25,0,0,1-1.9.92,2.072,2.072,0,0,1-1.151-.31,2.353,2.353,0,0,1-.8-0.82,3.887,3.887,0,0,1-.462-1.19,6.536,6.536,0,0,1-.149-1.43A4.723,4.723,0,0,1,797.977,4089.54Zm8.743,7.37H807.8v-3.45c0.043,0,.117.01,0.221,0.02s0.21,0.02.318,0.02,0.212,0.01.312,0.01h0.215a5.218,5.218,0,0,0,1.313-.16,3.116,3.116,0,0,0,1.131-.51,2.669,2.669,0,0,0,.793-0.93,3,3,0,0,0,.3-1.4,2.768,2.768,0,0,0-.319-1.4,2.354,2.354,0,0,0-.825-0.85,3.3,3.3,0,0,0-1.125-.43,6.364,6.364,0,0,0-1.215-.12c-0.373,0-.75.01-1.131,0.04a6.762,6.762,0,0,0-1.066.16v9Zm3.055-8.17a2.288,2.288,0,0,1,.747.3,1.74,1.74,0,0,1,.533.57,1.827,1.827,0,0,1,.2.9,2.165,2.165,0,0,1-.215,1.02,1.641,1.641,0,0,1-.565.63,2.291,2.291,0,0,1-.787.3,4.322,4.322,0,0,1-.877.09h-0.208c-0.1,0-.2-0.01-0.3-0.01s-0.2-.01-0.3-0.01a0.734,0.734,0,0,1-.208-0.04v-3.77a2.683,2.683,0,0,1,.494-0.06c0.208-.01.424-0.01,0.65-0.01A3.931,3.931,0,0,1,809.775,4088.74Z" transform="translate(-766 -4047)"/>
+            <path class="cls-ico" d="M799.768,4064.77c3.48,3.14,7.44,6.71,11.16,10.15a17.779,17.779,0,0,0,2.04-1.12c-4.2-3.96-8.16-7.61-12.18-11.36-0.78-.04-1.62-0.04-2.28-0.04-4.02,3.74-8.34,7.79-12.239,11.45a10.913,10.913,0,0,0,1.98,1.12C792.208,4071.35,795.928,4068.12,799.768,4064.77Z" transform="translate(-766 -4047)"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="g-footer_body"><!-- g-footer_body -->
+        <div class="g-footer-information"><!-- g-footer-information -->
+          <h2 class="g-footer-information_title">Nishizaki Yutaka｜西崎 豊</h2>
+          <!-- <p class="g-footer-information_address"></p> -->
+          <ul class="g-footer-information_contact">
+            <li>contact</li><!-- メアド入力 -->
+            <li><a class="go-to-contact" href="#contact">お問い合わせ<span class="contact-after">フォームよりご連絡ください</span></a></li>
+          </ul>
+        </div><!-- /.g-footer-information -->
+
+        <nav class="g-footer-nav">
+          <!-- <div class="section"> -->
+          <ul class="social-btns">
+            <li>
+                <a href="https://www.facebook.com/yutaka.nishizaki.3" class="social-btn-heart fa-stack fa-lg">
+                    <i class="social-btn-heart-bg fa fa-heart fa-stack-2x facebook"></i>
+                    <i class="social-btn-heart-icon fa fa-facebook fa-stack-1x"></i>
+                </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/yutaponzactaka/" class="social-btn-heart fa-stack fa-lg">
+                  <i class="social-btn-heart-bg fa fa-heart fa-stack-2x instagram"></i>
+                  <i class="social-btn-heart-icon fa fa-instagram fa-stack-1x"></i>
+              </a>
+            </li>
+
+            <li>
+                <a href="https://https://twitter.com/yutakanszk" class="social-btn-heart fa-stack fa-lg">
+                    <i class="social-btn-heart-bg fa fa-heart fa-stack-2x twitter"></i>
+                    <i class="social-btn-heart-icon fa fa-twitter fa-stack-1x"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.youtube.com/channel/UCvoqBwjdf1PDLEDqyPQMvnQ" class="social-btn-heart fa-stack fa-lg">
+                    <i class="social-btn-heart-bg fa fa-heart fa-stack-2x youtube"></i>
+                    <i class="social-btn-heart-icon fa fa-youtube fa-stack-1x"></i>
+                </a>
+            </li>
+          </ul>
+          <!-- </div> -->
+
+          <!-- <ul class="g-siteinfo-nav">
+            <li class="g-footer-nav_item"><a href="http://" class="g-footer-nav_link" target="_blank"></a></li>
+            <li class="g-footer-nav_item"><a href="http://" class="g-footer-nav_link" target="_blank"></a></li>
+          </ul> -->
+        </nav>
+      </div><!-- /.g-footer_body -->
+      <div class="copyright">
+        <p class="g-mb-copyright"><span>(C)</span> Yutaka Nishizaki All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+  <script src="/js/wow.min.js"></script>
+  <script src="/js/jquery.colorbox-min.js"></script>
+  <script src="/js/jquery.colorbox-ja.js"></script>
+  <script src="/js/main.js"></script>
+
+</body>
+</html>

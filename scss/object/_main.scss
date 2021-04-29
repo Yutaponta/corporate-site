@@ -1,0 +1,1323 @@
+/**
+ * ----------------------------------------
+ * top_view
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes top_view {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  80% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    // opacity: 0;
+    // visibility: hidden;
+  }
+}
+body {
+  background-image: url(../img/stiff-paper.png);
+  background-color: rgba(255, 255, 255, 0.25);
+  background-blend-mode: lighten;
+  background-size: cover;
+}
+
+.top_view {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  // background-color: #ffffff;
+  // background-color: #ea3345;
+  background-image: url(../img/cover-book.png);
+  background-size: cover;
+  animation: top_view 15s;
+  animation-fill-mode: forwards;
+  // margin-bottom: -100vw;
+  z-index: 60;
+  font-family: 'Kaushan Script', 'Permanent Marker', 'Bangers', cursive,
+    YuGothic, 游ゴシック, 'Yu Gothic', 'Noto Sans Japanese', sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  // font-style: italic;
+  &.target {
+  }
+  &.target.is-hidden {
+    display: none;
+  }
+  &::after {
+    content: '';
+    position: initial;
+    display: block;
+    width: 100%;
+    height: 0;
+  }
+  h2 {
+    display: inline-block;
+    position: absolute;
+    width: auto;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    font-size: 2em;
+    color: #bdb9a8;
+    text-align: center;
+    text-shadow: 0 13.36px 8.896px #d1c9bc, 0 -2px 1px #fff;
+    @include overTab {
+      font-size: 2em;
+      white-space: nowrap;
+    }
+    @media print, screen and (min-width: 900px) {
+      font-size: 3em;
+    }
+    @media screen and (max-width: 380px) {
+      font-size: 1.4em;
+    }
+  }
+  p {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #cec7b8;
+    font-size: 20px;
+    font-weight: normal;
+    text-shadow: 1px 13.36px 8.896px #d1c9bc, 0 -2px 1px #fff;
+    @include overTab {
+      font-size: 30px;
+    }
+    @media print, screen and (min-width: 900px) {
+      bottom: 25%;
+      right: 10%;
+      transform: translate(0, 0);
+      font-size: 2em;
+    }
+    @media screen and (max-width: 380px) {
+      font-size: 1.1em;
+    }
+    .with {
+      font-size: 14px;
+      @include overTab {
+        font-size: 20px;
+      }
+    }
+  }
+  .text-focus-in {
+    -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+      both;
+    animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  }
+  .text-focus-in2 {
+    display: inline-block;
+    white-space: nowrap;
+    -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+      both;
+    animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    animation-delay: 3s;
+  }
+  .text-focus-in3 {
+    -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+      both;
+    animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    animation-delay: 7s;
+    text-align: right;
+    // &::after {
+    //   content: '';
+    //   position: static;
+    // }
+  }
+  .btn {
+    position: absolute;
+    background: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    bottom: 10%;
+    left: 50%;
+    margin-left: -60px;
+    // margin: 30px auto;
+    padding: 10px 20px;
+    color: #b6ae95;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    font-weight: 450;
+    cursor: pointer;
+    transition: ease all 0.3s;
+    display: block;
+    animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    animation-delay: 10s;
+
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    outline: 1px solid;
+    outline-color: #878787;
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
+    @include overTab {
+      padding: 14px 28px;
+      font-size: 15px;
+      font-size: 1.2em;
+    }
+    @media screen and (max-width: 380px) {
+      padding: 8px 16px;
+      font-size: 0.9em;
+    }
+    &:hover {
+      color: #444444;
+      font-weight: 400;
+      border-color: #d5d8ce;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
+        0 0 20px rgba(255, 255, 255, 0.2);
+      outline-color: transparent;
+      outline-offset: 12px;
+      text-shadow: 2px 2px 10px #d5d8ce;
+    }
+    &:active {
+      background: #d5d8ce;
+      color: #fff;
+      border: 2px solid cl(black);
+    }
+  }
+}
+
+.main::before {
+  content: '';
+  position: static;
+}
+.main {
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 100px;
+  font-family: 'Lato', 'YuGothic', 'Yu Gothic', 'Meiryo', Hiragino Sans,
+    Hiragino Kaku Gothic ProN, sans-serif;
+  @include overTab {
+    padding-top: 110px;
+    padding-left: 270px;
+  }
+  .www-content {
+    .g-header-nav {
+      position: fixed;
+      display: block;
+      top: 68px;
+      right: 0;
+      // z-index: 10000;
+      .g-header-nav_list {
+        // position: fixed;
+      }
+    }
+    .g-header-nav_item {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 5px;
+      font-size: 25px;
+      &:last-child {
+        margin-right: 30px;
+        @include spTab {
+          margin-right: 15px;
+        }
+      }
+      a {
+        transition: all 0.3s;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        color: rgb(180, 180, 180);
+        line-height: 0.6;
+        font-size: 1.1em;
+        &:hover {
+          font-size: 1em;
+          margin-top: 3px;
+          color: rgba($color: #fff, $alpha: 1);
+          text-shadow: 1px 1px 7px rgb(61, 61, 61);
+        }
+      }
+      .wakuwaku:hover::after {
+        content: 'akuaku';
+      }
+      .website:hover::after {
+        content: 'ebsite';
+      }
+      .warau:hover::after {
+        content: 'araukadoniha・fukukitaru';
+      }
+    }
+  }
+  #introduction {
+    margin-top: -120px;
+    padding-top: 120px;
+  }
+  .cmn-title {
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-bottom: 17px;
+    margin-bottom: 20px;
+    left: 0px;
+    // max-width: 1020px;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    text-align: center;
+    transition: all ease 0.5s;
+    @include overTab {
+      left: -20px;
+      // padding-bottom: 25px;
+    }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 80px;
+      height: 1px;
+      margin-left: -40px;
+      background-color: #d5d8ce;
+      @include overTab {
+        height: 2px;
+      }
+    }
+    & .en {
+      display: block;
+      font-size: 16px;
+      font-size: 1.6em;
+      @include overTab {
+        font-size: 18px;
+        font-size: 1.8em;
+      }
+      @include spTab {
+        font-size: 13px;
+        font-size: 1.3em;
+      }
+    }
+    & .jp {
+      display: block;
+      margin-top: 4px;
+      font-size: 11px;
+      font-size: 1.1em;
+      @include overTab {
+        font-size: 12px;
+        font-size: 1.2em;
+      }
+      @include spTab {
+        font-size: 10px;
+        font-size: 1em;
+      }
+    }
+    &:hover {
+      text-shadow: 6px 6px 5px #c0c0c0;
+    }
+  }
+
+  .phrase_start {
+    font-family: 'Hannari';
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+    justify-content: center;
+    @include overTab {
+      width: calc(100% - 40px);
+    }
+    @media print, screen and (max-width: 540px) {
+      font-size: 10px;
+      font-size: 1em;
+      text-align: center;
+      width: 100%;
+    }
+    .phrase_start_www {
+      display: block;
+    }
+    .initial {
+      font-size: 14px;
+      font-size: 1.4em;
+    }
+    .phrase_eng {
+      display: block;
+      margin-right: 30px;
+      border-right: 2px solid rgba($color: red, $alpha: 0.3);
+      padding-right: 30px;
+      text-align: right;
+      @media print, screen and (max-width: 540px) {
+        display: none;
+      }
+      li {
+        transition: all 0.4s ease-in;
+        display: block;
+        position: relative;
+        width: 270px;
+        font-size: 11px;
+        font-size: 1.1em;
+        line-height: 1.8;
+        letter-spacing: 0.2em;
+        &:hover {
+          color: red;
+          top: -5px;
+          left: -5px;
+          text-shadow: 5px 5px 3px #a1a1a1;
+        }
+        @media print, screen and (min-width: 840px) {
+          font-size: 13px;
+          font-size: 1.3em;
+        }
+        @media print, screen and (min-width: 1024px) {
+          font-size: 15px;
+          font-size: 1.5em;
+        }
+      }
+    }
+    .phrase_jp {
+      display: block;
+      li {
+        transition: all 0.4s ease-in;
+        display: block;
+        position: relative;
+        width: 270px;
+        font-size: 11px;
+        font-size: 1.1em;
+        line-height: 1.8;
+        letter-spacing: 0.2em;
+        &:hover {
+          color: red;
+          top: -5px;
+          left: -5px;
+          text-shadow: 5px 5px 3px #a1a1a1;
+        }
+        @media print, screen and (min-width: 840px) {
+          font-size: 13px;
+          font-size: 1.3em;
+        }
+        @media print, screen and (min-width: 1024px) {
+          font-size: 15px;
+          font-size: 1.5em;
+        }
+        @media print, screen and (max-width: 540px) {
+          // letter-spacing: 0;
+          // font-size: 10px;
+          // font-size: 1em;
+        }
+        // &::before {
+        //   content: '｜';
+        //   color: #d5d8ce;
+        //   margin-right: 15px;
+        // position: absolute;
+        // bottom: 0;
+        // left: 50%;
+        // width: 80px;
+        // height: 2px;
+        // margin-left: -40px;
+        // background-color: #d5d8ce;
+        // }
+      }
+    }
+    // &::before {
+    //   display: block;
+    //   content: '';
+    //   width: 150px;
+    //   height: auto;
+    //   background-image: linear-gradient(
+    //     to right top,
+    //     transparent 49%,
+    //     black 49%,
+    //     black 51%,
+    //     transparent 51%
+    //   );
+    // }
+  }
+  // 3D hover
+  // .superShadow {
+  //   text-shadow: 0 1px 0 hsl(174, 5%, 80%), 0 2px 0 hsl(174, 5%, 75%),
+  //     0 3px 0 hsl(174, 5%, 70%), 0 4px 0 hsl(174, 5%, 66%),
+  //     0 5px 0 hsl(174, 5%, 64%), 0 6px 0 hsl(174, 5%, 62%),
+  //     0 7px 0 hsl(174, 5%, 61%), 0 8px 0 hsl(174, 5%, 60%),
+  //     0 0 5px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.2),
+  //     0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2),
+  //     0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.3);
+  // }
+
+  // strong {
+  //   font-size: 200px;
+  // }
+
+  .profile {
+    .profile_character {
+      .profile_intro {
+        .inner-profile {
+          display: flex;
+          @include overTab {
+            width: calc(100% - 50px);
+          }
+          @include spTab {
+            flex-flow: column;
+          }
+          .profile-txt {
+            // width: 100%;
+            flex: 2;
+          }
+          .profile_img {
+            flex: 1;
+            // width: 80%;
+            margin-top: 15px;
+            height: auto;
+          }
+        }
+      }
+    }
+    .cmn_sub {
+      border-left: 5px solid #d5d8ce;
+      border-bottom: 2px solid #d5d8ce;
+      text-transform: uppercase;
+      position: relative;
+      display: block;
+      width: calc(100% - 0px);
+      padding-bottom: 5px;
+      padding-left: 18px;
+      margin-top: 40px;
+      margin-bottom: 0;
+      // max-width: 1020px;
+      line-height: 1.3;
+      letter-spacing: 0.1em;
+      font-size: 13px;
+      font-size: 1.3em;
+      transition: all 0.4s ease-in;
+      @include overTab {
+        width: calc(100% - 50px);
+        margin-bottom: 5px;
+      }
+      @include spTab {
+        margin-bottom: 0;
+        padding-left: 12px;
+        letter-spacing: 1px;
+        font-size: 11px;
+        font-size: 1.1em;
+      }
+      &:hover {
+        padding-left: 13px;
+        // padding-bottom: 10px;
+        // margin-bottom: 5px;
+        border-left: 10px solid #b8bbb2;
+        border-bottom: 2px solid #b8bbb2;
+        color: blue;
+        top: -5px;
+        // left: -5px;
+        text-shadow: 5px 5px 3px #d5d8ce;
+      }
+
+      // 斜線
+      // text-align: center;
+      // &::after {
+      //   content: '';
+      //   display: block;
+      //   position: absolute;
+      //   bottom: 0;
+      //   // left: 50%;
+      //   width: calc(100% - 28px);
+      //   height: 1px;
+      //   margin-left: -18px;
+      //   background-color: #d5d8ce;
+      //   @include overTab {
+      //     height: 2px;
+      //   }
+      // }
+      & .en {
+        // display: block;
+        // font-size: 20px;
+        // font-size: 2em;
+        @include overTab {
+          // font-size: 18px;
+          // font-size: 1.8em;
+        }
+        @include spTab {
+          margin-right: -10px;
+        }
+      }
+      & .jp::before {
+        content: '｜';
+        font-size: 13px;
+        font-size: 1em;
+        color: #d5d8ce;
+        margin-right: 5px;
+        // display: block;
+        // margin-top: 2px;
+        // font-size: 14px;
+        // font-size: 1.4em;
+        @include overTab {
+          // font-size: 12px;
+          // font-size: 1.2em;
+        }
+        @include spTab {
+          margin-right: -5px;
+        }
+      }
+    }
+    .cmn-des {
+      display: block;
+      width: calc(100% - 30px);
+      font-size: 11px;
+      font-size: 1.1em;
+      padding-left: 1em;
+      padding-top: 5px;
+      // margin-right: 40px;
+      line-height: 1.8;
+      @include overTab {
+        padding-top: 10px;
+        width: calc(100% - 45px);
+      }
+      @include spTab {
+        width: calc(100% - 15px);
+        font-size: 10px;
+        font-size: 1em;
+      }
+    }
+    .name {
+      padding: 0 5px 0;
+      font-weight: bold;
+    }
+    .asterisk {
+      font-size: 8px;
+      font-size: 0.8em;
+      vertical-align: top;
+    }
+
+    .other_list {
+      display: block;
+      padding-left: 1em;
+      margin-top: 5px;
+      margin-right: 40px;
+      margin-bottom: 30px;
+      width: calc(100% -50px);
+      font-size: 11px;
+      font-size: 1.1em;
+      line-height: 2;
+      @include overTab {
+        line-height: 2.3;
+        margin-top: 10px;
+      }
+      @include spTab {
+        margin-top: 0;
+        margin-right: 10px;
+        line-height: 1.5;
+        font-size: 10px;
+        font-size: 1em;
+      }
+      dt {
+        width: 110px;
+        float: left;
+        @include spTab {
+          margin-top: 10px;
+          width: 130px;
+        }
+        &::after {
+          content: '';
+          @include spTab {
+            content: '：';
+          }
+        }
+      }
+      dd {
+        margin-left: 110px;
+        @include spTab {
+          font-size: 9px;
+          font-size: 0.9em;
+          padding-left: 8px;
+          display: block;
+          margin-left: 0;
+          clear: both;
+        }
+        &::before {
+          content: '：';
+          padding-right: 5px;
+          @include spTab {
+            display: none;
+          }
+        }
+      }
+
+      // Side入れ替わりanimation
+      .type-10 {
+        display: none;
+        padding: 0 !important;
+        margin-left: -10px;
+      }
+      .type-10 > span > span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: all 0.2s linear;
+        transform-origin: 100% 100%;
+      }
+
+      .type-10 > span > span span {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: block;
+        opacity: 1;
+        left: 0;
+        top: 0;
+        box-sizing: border-box;
+        // padding: 9px 0;
+        text-align: center;
+        transform-style: preserve-3d;
+        // background: #cc441a;
+        color: cl(black);
+        transition: transform 0.3s linear, background 0.3s linear;
+        transform-origin: 0 0;
+      }
+
+      .type-10:hover > span > span span:first-of-type {
+        background: #1a5470;
+      }
+      .type-10 > span > span span:nth-of-type(2) {
+        transform: rotateY(90deg) translateX(-120px);
+        background: #aaa;
+      }
+
+      .type-10:hover > span > span span:nth-of-type(2) {
+        background: #fff7f5;
+        color: cl(black);
+      }
+      .type-10:hover > span > span {
+        transform: rotateY(-90deg);
+      }
+    }
+  }
+  .phrase_close {
+    text-align: center;
+    font-size: 12px;
+    font-size: 1.2em;
+    margin-top: 50px;
+    // margin-right: 20px;
+    margin-bottom: 120px;
+    font-family: 'Hannari';
+    font-style: italic;
+    @include overTab {
+      margin-right: 40px;
+      font-size: 14px;
+      font-size: 1.4em;
+    }
+    @include spTab {
+      font-size: 10px;
+      font-size: 1em;
+    }
+    &:hover {
+      transition: all 0.4s ease-in;
+      position: relative;
+      // top: -3px;
+      // left: -3px;
+      text-shadow: 5px 5px 3px #d5d8ce;
+    }
+    span {
+      text-transform: capitalize;
+      font-size: 12px;
+      font-size: 1.2em;
+      @include spTab {
+        font-size: 11px;
+        font-size: 1.1em;
+      }
+    }
+    .phrase_desc {
+    }
+    .close-title {
+    }
+    span #smile {
+      font-style: normal;
+      font-size: 13px;
+      font-size: 1.3em;
+    }
+  }
+
+  #works {
+    display: block;
+    margin-top: -120px;
+    padding-top: 120px;
+    margin-bottom: 100px;
+    // margin: 0 auto;
+    .works-list {
+      display: block;
+      @include overTab {
+        margin-right: 10px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        display: flex;
+      }
+    }
+    .works-item {
+      display: block;
+      width: 360px;
+      height: 290px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      // flex-flow: column-reverse;
+      @include overTab {
+      }
+      @include spTab {
+        width: 300px;
+        height: auto;
+      }
+      img {
+      }
+      .item-txt {
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 14px;
+        font-size: 1.4em;
+      }
+      figure.hover-parent {
+        border: 1px solid rgb(228, 228, 228);
+        box-shadow: 3px 3px 5px cl(grey);
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        height: 252px;
+        position: relative;
+        margin-bottom: 30px;
+        overflow: hidden;
+        transition: all ease-in 0.8s;
+        &:hover {
+          box-shadow: 5px 5px 7px cl(rgb(117, 117, 117));
+        }
+        @include spTab {
+          height: 207px;
+        }
+      }
+      figcaption.hover-mask {
+        width: 100%;
+        height: auto;
+        // line-height: 252px;
+        position: absolute;
+        // display: inline-block;
+        box-sizing: border-box;
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: all 0.8s ease;
+        transition-delay: 0.2s;
+        color: #fff;
+        // display: flex;
+
+        text-align: center;
+        padding: 200px 0 0px;
+        bottom: 0;
+      }
+      figure.hover-parent:hover .hover-mask {
+        opacity: 1;
+        padding: 100px 0 100px;
+      }
+    }
+  }
+
+  #skill-set {
+    position: relative;
+    margin-top: -120px;
+    padding-top: 120px;
+    margin-bottom: 120px;
+    .inner {
+      // margin-right: auto;
+      // margin-left: auto;
+      position: relative;
+      // text-align: center;
+      // left: 25%;
+      // transform: translateX(-50%);
+      // width: calc(100% - 40px);
+      @media print, screen and (min-width: 1144px) {
+      }
+      @include overTab {
+        // margin-right: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .skill-set {
+        // display: block;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        @media print, screen and (min-width: 1144px) {
+        }
+        .skill-content {
+          display: block;
+          // width: calc(100% - 40px);
+          .skill-list {
+            display: block;
+            line-height: 2;
+            flex-flow: column;
+            text-align: right;
+            &.name {
+              display: inline-block;
+              text-align: right;
+              width: 250px;
+              @include overTab {
+              }
+              @media print, screen and (min-width: 1144px) {
+                width: auto;
+              }
+              @include spTab {
+                width: 170px;
+              }
+              li::after {
+                content: '：';
+                color: #d5d8ce;
+              }
+            }
+            &.star {
+              display: inline-block;
+              text-align: left;
+              width: 200px;
+              letter-spacing: 0.2em;
+              // flex: 1;
+              color: #fd4;
+              text-shadow: 0 1px 2px #952;
+              @include overTab {
+                width: 250px;
+              }
+              @media print, screen and (min-width: 1144px) {
+                width: auto;
+              }
+              @include spTab {
+                width: 170px;
+              }
+            }
+            li {
+              flex: 1;
+              font-size: 14px;
+              font-size: 1.4em;
+              @include overTab {
+                font-size: 16px;
+                font-size: 1.6em;
+              }
+              @include spTab {
+                font-size: 12px;
+                font-size: 1.2em;
+              }
+              span.sub {
+                font-size: 8px;
+                font-size: 0.8em;
+                margin: 0;
+                padding: 0;
+                @include spTab {
+                  display: none;
+                }
+              }
+              &.star {
+                transition: 1s;
+                transform: rotateX(0deg);
+                &.passion {
+                  color: rgb(255, 140, 46);
+                }
+                &:hover {
+                  transform: rotateX(360deg) scale(1.1);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #service_price {
+    position: relative;
+    margin-top: -120px;
+    padding-top: 120px;
+    margin-bottom: 120px;
+    .service-desc {
+      display: block;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 11px;
+      font-size: 1.1em;
+      @include overTab {
+        margin-right: 40px;
+      }
+      @include spTab {
+        font-size: 10px;
+        font-size: 1em;
+      }
+    }
+    .serviceーcontent {
+      display: block;
+      @media print, screen and (min-width: 1024px) {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 25px;
+      }
+      @include overTab {
+      }
+      @include spTab {
+      }
+      .service-item {
+        border: 1px solid #d5d8ce;
+        width: 300px;
+        height: 430px;
+        margin: 0 auto 30px;
+        @include spTab {
+          width: 100%;
+        }
+        .service-title {
+          margin-top: 20px;
+          font-size: 11px;
+          font-size: 1.1em;
+          letter-spacing: 0.06em;
+          transition: opacity 0.3s ease 0s;
+          text-align: center;
+          @include overTab {
+            font-size: 14px;
+            font-size: 1.4em;
+            opacity: 0.8;
+          }
+          span.title-sub {
+            display: block;
+            color: cl(grey);
+            font-size: 0.8em;
+          }
+        }
+        .service-img {
+          margin: 0 auto;
+          max-width: 200px;
+          img.lpage {
+            display: block;
+            margin: 30px auto;
+            width: 150px;
+          }
+          img.cpage {
+            display: block;
+            margin: 20px auto 15px;
+            width: 180px;
+          }
+        }
+        .service-txt {
+          display: block;
+          text-align: center;
+          p {
+            display: block;
+            font-size: 10px;
+            font-size: 1em;
+            @include overTab {
+              font-size: 11px;
+              font-size: 1.1em;
+            }
+            &.price {
+              display: block;
+              margin-top: 15px;
+            }
+          }
+          ul {
+            display: block;
+            margin-top: 15px;
+            font-size: 11px;
+            font-size: 1.1em;
+          }
+        }
+      }
+    }
+    .criterion {
+      text-align: center;
+      font-size: 10px;
+      font-size: 1em;
+      margin-top: -10px;
+      @include overTab {
+        margin-top: 10px;
+        margin-right: 40px;
+      }
+    }
+  }
+
+  #contact {
+    position: relative;
+    margin-top: -120px;
+    padding-top: 120px;
+    .contact-content {
+      margin-bottom: 120px;
+      text-align: center;
+      @include overTab {
+        margin-right: 40px;
+      }
+      p {
+        font-size: 11px;
+        font-size: 1.1em;
+        @include spTab {
+          font-size: 10px;
+          font-size: 1em;
+        }
+      }
+      .contact_inner {
+        margin-top: 50px;
+        .btn {
+          background: none;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          margin: 30px auto;
+          padding: 14px 28px;
+          color: #212121;
+          font-size: 1.2em;
+          font-family: 'Open Sans';
+          font-size: 13px;
+          letter-spacing: 1px;
+          font-weight: 450;
+          cursor: pointer;
+          transition: ease all 0.3s;
+          display: block;
+
+          box-sizing: border-box;
+          border: 1px solid transparent;
+          outline: 1px solid;
+          outline-color: #878787;
+          outline-offset: 0px;
+          text-shadow: none;
+          transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
+          &:hover {
+            color: #212121;
+            font-weight: 400;
+            border-color: #d5d8ce;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5),
+              0 0 20px rgba(255, 255, 255, 0.2);
+            outline-color: transparent;
+            outline-offset: 12px;
+            text-shadow: 2px 2px 10px #d5d8ce;
+          }
+          &:active {
+            background: #d5d8ce;
+            color: #fff;
+            border: 2px solid cl(black);
+          }
+        }
+        #contact-form {
+          position: relative; //Click時に別表示させる場合
+          display: none;
+          width: 400px;
+          margin: 0 auto;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+          @include spTab {
+            width: 100%;
+          }
+          ul {
+            display: inline-block;
+          }
+          h3 {
+            font-weight: 500;
+            // text-transform: uppercase;
+            color: cl(black);
+            font-size: 26px;
+            width: auto;
+            text-align: center;
+            margin: 50px auto 30px;
+            @include spTab {
+              font-size: 18px;
+              font-size: 1.2em;
+            }
+          }
+          .col {
+            display: block;
+            position: relative;
+          }
+          input {
+            border: 0;
+            margin: 25px 40px;
+            width: 300px;
+            padding: 10px;
+            border-bottom: 2px solid rgb(211, 211, 211);
+            background: none;
+            font-family: 'Fontawesome', 'Source Sans Pro', sans-serif;
+            display: block;
+            color: cl(black);
+            box-sizing: border-box;
+            @include spTab {
+              width: 100%;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+          .effect ~ .focus-border {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background-color: #3399ff;
+            transition: 0.5s;
+          }
+          .effect:focus ~ .focus-border {
+            width: 300px;
+            transition: 0.5s;
+            left: 40px;
+            @include spTab {
+              width: 100%;
+            }
+          }
+          textarea {
+            border: 0;
+            width: 300px;
+            height: 120px;
+            display: block;
+            margin-left: 40px;
+            background: none;
+            padding: 10px;
+            font-family: 'Fontawesome', 'Source Sans Pro', sans-serif;
+            border-bottom: 2px solid rgb(211, 211, 211);
+            color: cl(black);
+            box-sizing: border-box;
+            @include spTab {
+              margin-left: 0;
+              width: 100%;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+          // #submit {
+          //   box-sizing: border-box;
+          //   background: none;
+          //   // border: 1px solid rgb(211, 211, 211);
+          //   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          //   margin: 30px auto;
+          //   padding: 12px 0;
+          //   color: #212121;
+          //   font-family: 'Open Sans';
+          //   font-size: 13px;
+          //   letter-spacing: 1px;
+          //   font-weight: 450;
+          //   cursor: pointer;
+          //   transition: ease-out all 0.5s;
+          //   display: block;
+          //   margin: 50px auto;
+          //   color: cl(black);
+          //   width: 140px;
+
+          //   background: linear-gradient(
+          //     270deg,
+          //     #c2bfbf,
+          //     #c2bfbf,
+          //     cl(white),
+          //     cl(white)
+          //   );
+          //   background-position: 1% 50%;
+          //   background-size: 300% 300%;
+          //   border: none;
+          //   border: 2px solid rgb(211, 211, 211);
+          //   &:hover {
+          //     color: #212121;
+          //     // border: #3333ff solid 2px;
+          //     box-shadow: 0 0 5px cl(grey);
+          //     // background: #3333ff;
+          //     // color: #fff;
+
+          //     background-position: 99% 50%;
+          //     font-weight: 500;
+          //     text-shadow: 0 0 8px #000;
+          //     color: #ffffff;
+          //     border: 2px solid #d5d8ce;
+          //     cursor: pointer;
+          //   }
+          //   &:active {
+          //     background: #d5d8ce;
+          //     color: #fff;
+          //     border: 2px solid cl(black);
+          //   }
+          // }
+          #submit2 {
+            box-sizing: border-box;
+            background: none;
+            // border: 1px solid rgb(211, 211, 211);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 30px auto;
+            padding: 12px 0;
+            color: #212121;
+            font-family: 'Open Sans';
+            font-size: 13px;
+            letter-spacing: 1px;
+            font-weight: 450;
+            cursor: pointer;
+            transition: ease-out all 0.5s;
+            display: block;
+            margin: 50px auto;
+            color: cl(black);
+            width: 140px;
+
+            background: linear-gradient(
+              270deg,
+              #c2bfbf,
+              #c2bfbf,
+              cl(white),
+              cl(white)
+            );
+            background-position: 1% 50%;
+            background-size: 300% 300%;
+            border: none;
+            border: 2px solid rgb(211, 211, 211);
+            &:hover {
+              color: #212121;
+              // border: #3333ff solid 2px;
+              box-shadow: 0 0 5px cl(grey);
+              // background: #3333ff;
+              // color: #fff;
+
+              background-position: 99% 50%;
+              font-weight: 500;
+              text-shadow: 0 0 8px #000;
+              color: #ffffff;
+              border: 2px solid #d5d8ce;
+              cursor: pointer;
+            }
+            &:active {
+              background: #d5d8ce;
+              color: #fff;
+              border: 2px solid cl(black);
+            }
+          }
+          .close {
+            position: absolute;
+            right: 20px;
+            top: -10px;
+            cursor: pointer;
+            font-weight: 400;
+            font-size: 3em;
+            color: #ee4444;
+          }
+        }
+      }
+    }
+  }
+}
+.js #contact-form {
+  position: absolute;
+  top: 3em;
+  display: none;
+  left: 0;
+  right: 0;
+}

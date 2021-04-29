@@ -853,9 +853,9 @@ body {
   text-transform: capitalize;
 }
 
-.top_view.target.is-hidden {
+/* .top_view.target.is-hidden {
   display: none;
-}
+} */
 
 .top_view::after {
   content: '';
@@ -960,8 +960,8 @@ body {
 .top_view .text-focus-in3 {
   -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
+  -webkit-animation-delay: 6.5s;
+          animation-delay: 6.5s;
   text-align: right;
 }
 
@@ -986,8 +986,8 @@ body {
   display: block;
   -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
           animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
+  -webkit-animation-delay: 9.5s;
+          animation-delay: 9.5s;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid transparent;

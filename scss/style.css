@@ -831,7 +831,7 @@ main {
 }
 
 body {
-  background-image: url(../img/stiff-paper.png);
+  background-image: url(https://yutaponta.github.io/corporate-site//img/stiff-paper.png);
   background-color: rgba(255, 255, 255, 0.25);
   background-blend-mode: lighten;
   background-size: cover;
@@ -841,7 +841,7 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url(../img/cover-book.png);
+  background-image: url(https://yutaponta.github.io/corporate-site//img/cover-book.png);
   background-size: cover;
   -webkit-animation: top_view 15s;
           animation: top_view 15s;

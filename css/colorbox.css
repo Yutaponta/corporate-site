@@ -102,7 +102,7 @@
   padding: 1px;
 }
 #cboxLoadingGraphic {
-  background: url(https://yutaponta.github.io/corporate-site/img/loading.gif) no-repeat center center;
+  background: url(../img/loading.gif) no-repeat center center;
 }
 #cboxLoadingOverlay {
   background: #000;
@@ -134,7 +134,7 @@
   height: 20px;
   position: absolute;
   top: -20px;
-  background: url(https://yutaponta.github.io/corporate-site/img/controls.png) no-repeat 0 0;
+  background: url(../img/controls.png) no-repeat 0 0;
 }
 
 /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
@@ -190,9 +190,9 @@
   background: #000;
 }
 #cboxLoadedContent {
-  background: #fff;
+  background-color: rgba(236, 236, 236, 0.6);
   border-radius: 5px;
-  padding-top: 28px;
+  /* padding-top: 28px; */
   /* padding: 0; */
   overflow: auto;
   -moz-box-shadow: 0px 1px 10px #000000;
@@ -204,21 +204,28 @@
 #cboxSlideshow,
 #cboxClose,
 #cboxTitle {
-  top: 0;
+  top: -30px;
 }
 #colorbox,
 #cboxOverlay,
 #cboxWrapper {
   overflow: visible;
 }
+#cboxPrevious,
+#cboxSlideshow {
+  padding-right: 23px;
+}
+#cboxNext {
+  padding-right: 25px;
+}
 #cboxClose {
   padding-right: 25px;
-  top: 3px;
+  /* top: 3px; */
 }
 #cboxTitle {
-  color: cl(grey);
+  color: white;
   padding-left: 12px;
-  top: 2px;
+  top: -29px;
   font-size: 1.1em;
 }
 #inline-content {

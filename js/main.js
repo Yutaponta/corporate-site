@@ -1,10 +1,3 @@
-//top_view
-// var $target = document.querySelector('.target')
-// var $button = document.querySelector('.button')
-// $button.addEventListener('click', function() {
-//   $target.classList.toggle('is-hidden')
-// })
-
 //hamburger
 //========================//
 $(function(){
@@ -21,9 +14,7 @@ $(function(){
   new WOW().init();
 });
 
-/*
-contact
-*/
+/* contact */
 (function(){
   $('html').addClass('js');
 
@@ -88,25 +79,14 @@ $(document).ready(function(){
     height:'90%'
   });
 });
-// JavaScript for label effects only
-// $(window).load(function(){
-//   $("input").val("");
 
-//   $("input").focusout(function(){
-//     if($(this).val() != ""){
-//       $(this).addClass("has-content");
-//     }else{
-//       $(this).removeClass("has-content");
-//     }
-//   })
-// });
-
-
-
-/* accordion*/
-// $(function(){
-//   $(".js-accordion .first-letter").on( 'click', function() {
-//       $(this).next().slideToggle();
-//       return false;
-//   });
-// });
+$(function() {
+  $(".gallery").colorbox({
+    rel:'slideshow',
+    slideshow:true,
+    slideshowSpeed:7500,
+    maxWidth:"90%",
+    maxHeight:"90%",
+    opacity: 0.7
+  });
+});
